@@ -1,3 +1,32 @@
+# NestJS User Registration & Task Management API
+
+## Docker Postgres DB and pgAdmin Setup
+
+This project uses Docker for the pgAdmin database
+
+Run docker compose
+
+`docker compose up -d`
+
+Visit http://localhost:8080 to access pgAdmin
+
+email: admin@linuxhint.com
+password: secret
+
+Create a new conection by right clicking on Server > Create > Server
+
+In the General tab, enter a name for the conection: local
+
+In the connection tab, for the conection string to the database server, enter host.docker.internal, instead of localhost.
+
+username: admin <br>
+password: secret <br>
+(Tick the option save password)
+
+Then, create a database by richt clicking on Databases > Create >Database. Call the database: taskmanagement
+
+# NestJS
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
@@ -73,16 +102,3 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
-
-# Postgres DB and pgAdmin
-
-Run docker compose
-
-`docker compose up -d`
-
-Visit localhost:8080 to access pgAdmin
-
-email: admin@linuxhint.com
-password: secret
-
-for the conection string to the database server, use host.docker.internal instead of localhost
